@@ -4,6 +4,8 @@ import 'package:graphql_flutter/graphql_flutter.dart';
 
 class Const {
 
+
+
   static const GetTv = """ 
         query GetTv{
         allTelevision{
@@ -64,7 +66,7 @@ class Const {
 
   static const GetAllRadio = """ 
         query GetRadio{
-          allRadiostation(pays:"UGF5c0xpc3RlTm9kZTo1NQ=="){
+          allRadiostation(pays:"UGF5c0xpc3RlTm9kZTozNzI="){
             edges{
               node{
                 id
@@ -79,7 +81,7 @@ class Const {
  """;
 
   static HttpLink httpLink = HttpLink(
-    uri: 'http://192.168.50.31:8000/graphql',
+    uri: 'https://nannews.nan.ci/graphql',
   );
   static GraphQLClient client = GraphQLClient(
     cache: InMemoryCache(),

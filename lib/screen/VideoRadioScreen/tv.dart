@@ -90,13 +90,13 @@ class Tv extends StatelessWidget  with PlayerObserver, MultiAudioSupport {
             borderRadius: BorderRadius.circular(10),
               image: DecorationImage(
                 colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.2), BlendMode.darken),
-            image: NetworkImage("http://192.168.50.31:8000/media/$image"),
+            image: NetworkImage("https://nanspace.s3.amazonaws.com/nannewsmedia/$image"),
             fit: BoxFit.cover,
           )),
           child: Padding(
             padding: const EdgeInsets.all(5.0),
             child: Image.network(
-              "http://192.168.50.31:8000/media/$chaine",
+              "https://nanspace.s3.amazonaws.com/nannewsmedia/$chaine",
               fit: BoxFit.cover,
               height: 40,
             ),
