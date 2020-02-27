@@ -17,7 +17,7 @@ class Message extends StatelessWidget {
               child: CircleAvatar(
                 maxRadius: 16,
                 backgroundColor: Colors.white,
-                backgroundImage: AssetImage("images/rav.jpg"),
+                backgroundImage: AssetImage("images/ins.png"),
               ),
             ),
             SizedBox(
@@ -82,7 +82,7 @@ class Message extends StatelessWidget {
                   leading: CircleAvatar(
                     maxRadius: 20,
                     backgroundColor: Colors.white,
-                    backgroundImage: AssetImage("images/rav.jpg"),
+                    backgroundImage: AssetImage("images/ins.png"),
                   ),
                   title: Container(
                     margin: EdgeInsets.only(top: 30),
@@ -122,7 +122,7 @@ class Message extends StatelessWidget {
                   trailing: CircleAvatar(
                     maxRadius: 20,
                     backgroundColor: Colors.white,
-                    backgroundImage: AssetImage("images/rav.jpg"),
+                    backgroundImage: AssetImage("images/ins.png"),
                   ),
                 ),
               ],

@@ -32,7 +32,7 @@ class _ChatScreenState extends State<ChatScreen> {
               leading: CircleAvatar(
                 maxRadius: 30,
                 backgroundColor: Colors.white,
-                backgroundImage: AssetImage("images/rav.jpg"),
+                backgroundImage: AssetImage("images/ins.png"),
               ),
               title: Row(
                 children: <Widget>[
