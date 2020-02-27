@@ -1,0 +1,89 @@
+PODS:
+  - audioplayer (0.0.1):
+    - Flutter
+  - camera (0.0.1):
+    - Flutter
+  - Flutter (1.0.0)
+  - flutter_playout (0.0.1):
+    - Flutter
+  - flutter_plugin_android_lifecycle (0.0.1):
+    - Flutter
+  - flutter_youtube (0.0.1):
+    - Flutter
+    - XCDYouTubeKit
+  - image_picker (0.0.1):
+    - Flutter
+  - screen (0.0.1):
+    - Flutter
+  - share (0.5.2):
+    - Flutter
+  - video_player (0.0.1):
+    - Flutter
+  - video_player_web (0.0.1):
+    - Flutter
+  - webview_flutter (0.0.1):
+    - Flutter
+  - XCDYouTubeKit (2.8.3)
+
+DEPENDENCIES:
+  - audioplayer (from `.symlinks/plugins/audioplayer/ios`)
+  - camera (from `.symlinks/plugins/camera/ios`)
+  - Flutter (from `Flutter`)
+  - flutter_playout (from `.symlinks/plugins/flutter_playout/ios`)
+  - flutter_plugin_android_lifecycle (from `.symlinks/plugins/flutter_plugin_android_lifecycle/ios`)
+  - flutter_youtube (from `.symlinks/plugins/flutter_youtube/ios`)
+  - image_picker (from `.symlinks/plugins/image_picker/ios`)
+  - screen (from `.symlinks/plugins/screen/ios`)
+  - share (from `.symlinks/plugins/share/ios`)
+  - video_player (from `.symlinks/plugins/video_player/ios`)
+  - video_player_web (from `.symlinks/plugins/video_player_web/ios`)
+  - webview_flutter (from `.symlinks/plugins/webview_flutter/ios`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - XCDYouTubeKit
+
+EXTERNAL SOURCES:
+  audioplayer:
+    :path: ".symlinks/plugins/audioplayer/ios"
+  camera:
+    :path: ".symlinks/plugins/camera/ios"
+  Flutter:
+    :path: Flutter
+  flutter_playout:
+    :path: ".symlinks/plugins/flutter_playout/ios"
+  flutter_plugin_android_lifecycle:
+    :path: ".symlinks/plugins/flutter_plugin_android_lifecycle/ios"
+  flutter_youtube:
+    :path: ".symlinks/plugins/flutter_youtube/ios"
+  image_picker:
+    :path: ".symlinks/plugins/image_picker/ios"
+  screen:
+    :path: ".symlinks/plugins/screen/ios"
+  share:
+    :path: ".symlinks/plugins/share/ios"
+  video_player:
+    :path: ".symlinks/plugins/video_player/ios"
+  video_player_web:
+    :path: ".symlinks/plugins/video_player_web/ios"
+  webview_flutter:
+    :path: ".symlinks/plugins/webview_flutter/ios"
+
+SPEC CHECKSUMS:
+  audioplayer: f4462b84216b9c55f02bbbdc7ab60eec7427b2d4
+  camera: 38cc83ae9a5667bb5a71c7d9edaf60a91920fd4e
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  flutter_playout: a5aed32b3003b02eb4432815ecfe0c0e42a801ff
+  flutter_plugin_android_lifecycle: 47de533a02850f070f5696a623995e93eddcdb9b
+  flutter_youtube: 142f8d5af0a11963bdc73e13bcae6eb78db746c2
+  image_picker: e3eacd46b94694dde7cf2705955cece853aa1a8f
+  screen: abd91ca7bf3426e1cc3646d27e9b2358d6bf07b0
+  share: bae0a282aab4483288913fc4dc0b935d4b491f2e
+  video_player: 69c5f029fac4ffe4fc8a85ea7f7b793709661549
+  video_player_web: da8cadb8274ed4f8dbee8d7171b420dedd437ce7
+  webview_flutter: bec7599de6bfbe8008a739aa3ebd7b364ea9d0cd
+  XCDYouTubeKit: 46df93c4dc4d48763ad720d997704384635c4335
+
+PODFILE CHECKSUM: 0ba44ad07df4ab62269dc769727cf0f12b1e453d
+
+COCOAPODS: 1.7.5
