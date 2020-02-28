@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:nanews/FeatureSearchArticle/SearchArticleModel.dart';
+import 'package:sprinkle/Observer.dart';
+import 'package:sprinkle/WebResourceManager.dart';
+import 'package:sprinkle/SprinkleExtension.dart';
 
 class ScreenSearchDelegate extends SearchDelegate {
 
-  ScreenSearchDelegate();
-
-  List managers;
 
   @override
   List<Widget> buildActions(BuildContext context) {
@@ -29,20 +30,58 @@ class ScreenSearchDelegate extends SearchDelegate {
       return Center(child: Text("your query must contains 1 letters"),);
     }
 
-   // managers.inFilter.add(query);
+    WebResourceManager<SearchArticle> manager = context.fetch<WebResourceManager<SearchArticle>>();
+    manager.inFilter.add(query);
 
-    return Container();
+    return Observer<List<SearchArticle>>(
+      stream: manager.collection$,
+      onSuccess: (context, data) {
+
+        List<SearchArticle> _article = data;
+
+
+        return  ListView.separated(
+          itemBuilder: (context, index){
+            return ListTile(
+              leading: CircleAvatar(),
+              title: Text(_article[index].titre, style: TextStyle(color: Colors.white),),
+              subtitle: Text(_article[index].intro),
+            );
+          } ,
+          itemCount: _article?.length ?? 0,
+          separatorBuilder: (context, index) => Divider(),
+        );;
+      }
+    );
 
   }
 
   @override
   Widget buildSuggestions(BuildContext context) {
-    
-    double height = MediaQuery.of(context).size.height;
-    double width = MediaQuery.of(context).size.width;
 
-  //  managers.inFilter.add(query);
-    return Container();
+
+    WebResourceManager<SearchArticle> manager = context.fetch<WebResourceManager<SearchArticle>>();
+    manager.inFilter.add(query);
+    
+    return Observer<List<SearchArticle>>(
+        stream: manager.collection$,
+        onSuccess: (context, data) {
+
+          List<SearchArticle> _article = data;
+
+          return  ListView.separated(
+            itemBuilder: (context, index){
+              return ListTile(
+                leading: CircleAvatar(),
+                title: Text(_article[index].titre, style: TextStyle(color: Colors.white),),
+                subtitle: Text(_article[index].intro),
+              );
+            } ,
+            itemCount: _article.take(3)?.length ?? 0,
+            separatorBuilder: (context, index) => Divider(),
+          );;
+        }
+    );
 
 
   }}

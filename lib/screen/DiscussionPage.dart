@@ -17,6 +17,7 @@ class Discussions extends StatelessWidget {
         Tab(text: "Chat",),
         Tab(text: "Appels Inter..",),
       ],
+      search: ()=> showSearch(context: context,delegate: ScreenSearchDelegate()),
       body: TabBarView(children: [
         ChatScreen(),
         AppelInterScreen()

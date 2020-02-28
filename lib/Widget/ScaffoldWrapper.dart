@@ -6,8 +6,9 @@ class ScaffoldWrapper extends StatelessWidget {
   final int length;
   final Widget body;
   final List<Widget> mesTabs ;
+  Function search;
 
-  ScaffoldWrapper({this.length, this.body, this.mesTabs});
+  ScaffoldWrapper({this.length, this.body, this.mesTabs, this.search});
 
   @override
   Widget build(BuildContext context) {
@@ -44,7 +45,7 @@ class ScaffoldWrapper extends StatelessWidget {
             ],
           ),
           title: GestureDetector(
-            onTap: ()=>showSearch(context: context,delegate: ScreenSearchDelegate()),
+            onTap: search,
             child: Container(
               width: width * 0.7,
               height: height * 0.05,

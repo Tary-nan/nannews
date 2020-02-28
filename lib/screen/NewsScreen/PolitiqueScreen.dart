@@ -83,7 +83,6 @@ class _PolitiqueScreenState extends State<PolitiqueScreen> {
                       padding: EdgeInsets.only(left: 10),
                       height: height * 0.25,
                       child: ListView.builder(
-
                           scrollDirection: Axis.horizontal,
                           itemCount: article.topNews.edges.length,
                           itemBuilder: (context, i) {

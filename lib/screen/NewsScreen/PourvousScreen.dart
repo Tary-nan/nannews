@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:nanews/Widget/widgetcontaineradmin.dart';
 import 'package:nanews/Widget/widgetvideo.dart';
 import 'package:nanews/Widget/wigdetcontainer.dart';
 import 'package:nanews/screen/LectureScreen.dart';

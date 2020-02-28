@@ -5,6 +5,8 @@ import 'package:nanews/screen/NewsScreen/PolitiqueScreen.dart';
 import 'package:sprinkle/Observer.dart';
 import 'package:sprinkle/WebResourceManager.dart';
 import 'package:sprinkle/SprinkleExtension.dart';
+import 'package:nanews/screen/SearchScreen.dart';
+
 
 class News extends StatelessWidget {
 
@@ -25,6 +27,8 @@ class News extends StatelessWidget {
           mesTabs: category.map((x)=> Tab(
             text: x.nom,
           ),).toList(),
+
+          search: ()=> showSearch(context: context,delegate: ScreenSearchDelegate()),
           body: TabBarView(
             children: category.map((x)=> PolitiqueScreen(idCategorie: x.id,)).toList()
           ),

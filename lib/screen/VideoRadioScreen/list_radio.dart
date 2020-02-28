@@ -21,10 +21,7 @@ class RadioList extends StatelessWidget  {
       body: Observer<List<Radios>>(
         stream: manager.collection$,
         onSuccess: (context, data) {
-
-
           List<Radios> radio = data;
-          print(radio[0].frequence);
 
           return ListView.builder(
             itemCount: radio.length,
@@ -68,7 +65,6 @@ class RadioList extends StatelessWidget  {
                                 children: <Widget>[
                                   Container(
                                     height: 20,
-
                                     /// color:Colors.black,
                                     child: Row(
                                       children: <Widget>[
