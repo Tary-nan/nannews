@@ -1,13 +1,13 @@
 import 'dart:math';
 import 'package:flutter/cupertino.dart';
-import 'package:audioplayer/audioplayer.dart';
+//import 'package:audioplayer/audioplayer.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:nanews/screen/Lecteur/videoplayout.dart';
 
-AudioPlayer audioPlayer;
+//AudioPlayer audioPlayer;
 
 class RadioPage extends StatefulWidget {
 
