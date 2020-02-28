@@ -47,6 +47,9 @@ class Node {
   String image;
   String link;
   Site site;
+  int articleLike;
+  int articleCommenter;
+
 
   Node({
     this.id,
@@ -55,6 +58,8 @@ class Node {
     this.image,
     this.link,
     this.site,
+    this.articleLike,
+    this.articleCommenter
   });
 
   factory Node.fromJson(Map<String, dynamic> json) => Node(
@@ -64,6 +69,8 @@ class Node {
     image: json["imageMin"],
     link: json["link"] == null ? null : json["link"],
     site: json["site"] == null ? null : Site.fromJson(json["site"]),
+    articleLike: json["articleLike"]['edgeCount'],
+    articleCommenter: json["articleCommenter"]['edgeCount'],
   );
 
 }

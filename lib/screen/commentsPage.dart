@@ -53,7 +53,7 @@ class _CommentsPageState extends State<CommentsPage> {
                                
                                shape:BoxShape.circle,
                                image: DecorationImage(
-                                 image:AssetImage('assets/article.jpg'),
+                                 image:AssetImage('images/yaya.jpg'),
                                  fit:BoxFit.cover,
                                )
                              ),

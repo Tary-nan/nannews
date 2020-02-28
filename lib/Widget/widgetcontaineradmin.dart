@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:nanews/screen/commentsPage.dart';
 
 Widget containeradmin(BuildContext context,
-    {int like, int comment, String time, String site, String titre, String image}) {
+    {int like, int comment, String site, String titre, String image}) {
   return Container(
     margin: EdgeInsets.all(10),
     height: MediaQuery.of(context).size.height * 0.12,
@@ -15,7 +15,6 @@ Widget containeradmin(BuildContext context,
                 image: DecorationImage(
                     image:AssetImage("images/img-load.png"),
                     fit: BoxFit.contain),
-
                 borderRadius: BorderRadius.circular(5)),
             child: Container(
               height: MediaQuery.of(context).size.height * 0.16,
@@ -65,12 +64,7 @@ Widget containeradmin(BuildContext context,
                         style: TextStyle(color: Colors.grey),
                       ),
                       Text(
-                        time,
-                        style: TextStyle(color: Colors.grey),
-                      ),
-                      Text(
                         "   " + site,
-                        
                         style: TextStyle(color: Colors.grey, fontSize: 12),
                       ),
                     ],

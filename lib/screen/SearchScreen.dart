@@ -6,7 +6,6 @@ import 'package:sprinkle/SprinkleExtension.dart';
 
 class ScreenSearchDelegate extends SearchDelegate {
 
-
   @override
   List<Widget> buildActions(BuildContext context) {
     return [
@@ -39,13 +38,15 @@ class ScreenSearchDelegate extends SearchDelegate {
 
         List<SearchArticle> _article = data;
 
-
         return  ListView.separated(
           itemBuilder: (context, index){
-            return ListTile(
-              leading: CircleAvatar(),
-              title: Text(_article[index].titre, style: TextStyle(color: Colors.white),),
-              subtitle: Text(_article[index].intro),
+            return Container(
+
+              child: ListTile(
+                leading: CircleAvatar(),
+                title: Text(_article[index].titre, style: TextStyle(color: Colors.white),),
+                subtitle: Text(_article[index].intro),
+              ),
             );
           } ,
           itemCount: _article?.length ?? 0,

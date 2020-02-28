@@ -114,7 +114,7 @@ class _RadioPageState extends State<RadioPage> {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(150),
                           image: DecorationImage(
-                            image: AssetImage("assets/article.jpg"),
+                            image: AssetImage("images/yaya.jpg"),
                             fit: BoxFit.cover,
                            // colorFilter: ColorFilter.mode(Colors.black54, BlendMode.darken)
                               )

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:nanews/FeatureArticle/ArticleManager.dart';
 import 'package:nanews/FeatureArticle/ArticleModel.dart';
 import 'package:nanews/Widget/widgetcontaineradmin.dart';
+import 'package:nanews/screen/LectureScreen.dart';
 import 'package:nanews/screen/TopNewsPage.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 import 'package:sprinkle/Observer.dart';
@@ -16,10 +17,9 @@ class PolitiqueScreen extends StatefulWidget {
 }
 
 class _PolitiqueScreenState extends State<PolitiqueScreen> {
-  List contenu = List(10);
+
   RefreshController _refreshController =
       RefreshController(initialRefresh: true);
-
 
   @override
   Widget build(BuildContext context) {
@@ -100,7 +100,6 @@ class _PolitiqueScreenState extends State<PolitiqueScreen> {
                                         image:NetworkImage(
                                             article.topNews.edges[i].node.image,),
                                         fit: BoxFit.cover),
-
                                     borderRadius: BorderRadius.circular(5)),
                                 height: height * 0.25,
                                 width: width * 0.9,
@@ -144,16 +143,23 @@ class _PolitiqueScreenState extends State<PolitiqueScreen> {
                       ),
                     ),
                     Container(
-                        width: width, height: 10, color: Colors.grey.shade50),
+                        width: width, height: 10, color: Colors.grey.shade50
+                    ),
                     ...article.allArticles.edges.map((f) => Column(
                           children: <Widget>[
-                            containeradmin(context,
-                                comment: 14,
-                                like: 200,
-                                time: "17h",
-                                site: f.node.site.nom,
-                                titre: f.node.titre,
-                                image: f.node.image),
+                            GestureDetector(
+                              child: containeradmin(context,
+                                  comment: f.node.articleCommenter,
+                                  like: f.node.articleLike,
+                                  site: f.node.site.nom,
+                                  titre: f.node.titre,
+                                  image: f.node.image),
+                              onTap: (){
+                                Navigator.of(context).push(MaterialPageRoute(
+                                    builder: (_)=>LectureScreen(initialUrl: f.node.link, nomSite: f.node.site.nom,)
+                                ));
+                              },
+                            ),
                             Container(
                                 width: width,
                                 height: 10,

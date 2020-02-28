@@ -31,7 +31,7 @@ class _TopNewsScreenState extends State<TopNewsScreen> {
           itemBuilder: (context, i) {
             return GestureDetector(
               onTap: () => Navigator.push(
-                  context, MaterialPageRoute(builder: (_) => LectureScreen())),
+                  context, MaterialPageRoute(builder: (_) => LectureScreen(initialUrl: widget.data[i].node.link, nomSite: widget.data[i].node.site.nom,))),
               child: Container(
                 decoration: BoxDecoration(
                     image: DecorationImage(

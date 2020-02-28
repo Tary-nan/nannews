@@ -26,7 +26,14 @@ class ArticleService{
                   id
                   intro
                   titre
+                  link
                   imageMin
+                  articleLike{
+                    edgeCount
+                  }
+                  articleCommenter{
+                    edgeCount
+                  }
                   site{
                     nom
                     url
