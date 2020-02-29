@@ -43,7 +43,7 @@ Widget containeradmin(BuildContext context,
                       Icon(
                         Icons.favorite_border,
                         color: Colors.grey,
-                        size: 15,
+                        size: 13,
                       ),
                       Text(
                         " like  ",
@@ -57,7 +57,7 @@ Widget containeradmin(BuildContext context,
                           child: Icon(
                             Icons.comment,
                             color: Colors.grey,
-                            size: 15,
+                            size: 13,
                           )),
                       Text(
                         " comment  ",
