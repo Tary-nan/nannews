@@ -46,7 +46,7 @@ Widget containeradmin(BuildContext context,
                         size: 15,
                       ),
                       Text(
-                        " $like  ",
+                        " like  ",
                         style: TextStyle(color: Colors.grey),
                       ),
                       InkWell(
@@ -60,7 +60,7 @@ Widget containeradmin(BuildContext context,
                             size: 15,
                           )),
                       Text(
-                        " $comment  ",
+                        " comment  ",
                         style: TextStyle(color: Colors.grey),
                       ),
                       Text(

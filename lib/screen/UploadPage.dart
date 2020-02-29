@@ -3,10 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:video_player/video_player.dart';
 import 'dart:io';
-import 'package:camera/camera.dart';
 
 
-List<CameraDescription> cameras;
 class UploadPage extends StatefulWidget {
   @override
   _UploadPageState createState() => _UploadPageState();

@@ -21,6 +21,8 @@ class News extends StatelessWidget {
       stream: manager.collection$,
       onSuccess: (context, data) {
         List<Caterory> category = data;
+        print(category.map((x)=> x.id).toList());
+        print(category.map((x)=> x.nom).toList());
 
         return ScaffoldWrapper(
           length: category.length ,

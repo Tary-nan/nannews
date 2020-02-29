@@ -67,9 +67,7 @@ class _PolitiqueScreenState extends State<PolitiqueScreen> {
               },
               onLoading: () async {
                 await Future.delayed(Duration(milliseconds: 1000));
-                  setState(() {
-                    article=data;
-                  });
+
                 if (mounted) setState(() {});
                 _refreshController.loadComplete();
               },

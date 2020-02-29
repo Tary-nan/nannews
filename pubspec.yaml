@@ -27,9 +27,7 @@ dependencies:
   intl:
   flutter_spinkit:
   audioplayer:
-  chewie:
   flutter_playout:
-  http:
   flutter_youtube:
   image_picker:
   camera:

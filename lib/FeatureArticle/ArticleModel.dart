@@ -69,8 +69,8 @@ class Node {
     image: json["imageMin"],
     link: json["link"] == null ? null : json["link"],
     site: json["site"] == null ? null : Site.fromJson(json["site"]),
-    articleLike: json["articleLike"]['edgeCount'],
-    articleCommenter: json["articleCommenter"]['edgeCount'],
+    //articleLike: json["articleLike"]['edgeCount'] ?? null,
+    //articleCommenter: json["articleCommenter"]['edgeCount'] ?? null,
   );
 
 }
