@@ -4,6 +4,9 @@ import 'package:graphql_flutter/graphql_flutter.dart';
 
 class Const {
 
+  static const CATEGORIES = ['PRÉSIDENTIELLE 2020', 'RÉGIONS', 'CULTURE', 'PEOPLE', 'SPORTS', 'SOCIÉTÉ', 'POLITIQUE', 'ÉCONOMIE', 'ÉCONOMIE'] ;
+
+
 
 
   static const GetTv = """ 

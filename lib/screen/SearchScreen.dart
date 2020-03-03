@@ -85,4 +85,5 @@ class ScreenSearchDelegate extends SearchDelegate {
     );
 
 
-  }}
+  }
+}

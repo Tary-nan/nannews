@@ -38,33 +38,44 @@ Widget containeradmin(BuildContext context,
               Container(
                   width: MediaQuery.of(context).size.width,
                   child: Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[
-                      Icon(
-                        Icons.favorite_border,
-                        color: Colors.grey,
-                        size: 13,
-                      ),
-                      Text(
-                        " like  ",
-                        style: TextStyle(color: Colors.grey),
-                      ),
-                      InkWell(
-                          onTap: () => Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (_) => CommentsPage())),
-                          child: Icon(
-                            Icons.comment,
+                      Row(
+                        children: <Widget>[
+                          Icon(
+                            Icons.favorite_border,
                             color: Colors.grey,
                             size: 13,
-                          )),
-                      Text(
-                        " comment  ",
-                        style: TextStyle(color: Colors.grey),
+                          ),
+                          Text(
+                            " like ",
+                            style: TextStyle(color: Colors.grey),
+                          ),
+                        ],
                       ),
+
+                      Row(
+                        children: <Widget>[
+                          InkWell(
+                              onTap: () => Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (_) => CommentsPage())),
+                              child: Icon(
+                                Icons.comment,
+                                color: Colors.grey,
+                                size: 13,
+                              )),
+                          Text(
+                            "comment",
+                            style: TextStyle(color: Colors.grey),
+                          ),
+
+                        ],
+                      ),
+
                       Text(
-                        "   " + site,
+                        site,
                         style: TextStyle(color: Colors.grey, fontSize: 12),
                       ),
                     ],

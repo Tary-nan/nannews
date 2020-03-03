@@ -4,6 +4,8 @@ import 'package:nanews/FeatureRadio/RadioModel.dart';
 import 'package:nanews/FeatureRadio/RadioService.dart';
 import 'package:nanews/FeatureSearchArticle/SearchArticleModel.dart';
 import 'package:nanews/FeatureSearchArticle/SearchArticleService.dart';
+import 'package:nanews/FeatureSearchTv/SearchTvModel.dart';
+import 'package:nanews/FeatureSearchTv/SearchTvService.dart';
 import 'package:nanews/FeatureTv/TvCategoryModel.dart';
 import 'package:nanews/FeatureTv/TvCategoryService.dart';
 import 'package:nanews/mainPage.dart';
@@ -25,6 +27,7 @@ class MyApp extends StatelessWidget {
       .register<WebResourceManager<TvRadioCategory>>(()=> WebResourceManager<TvRadioCategory>(TvCategoryService()))
       .register<WebResourceManager<Radios>>(()=> WebResourceManager<Radios>(RadioService()))
       .register<WebResourceManager<SearchArticle>>(()=> WebResourceManager<SearchArticle>(SearchArticleService()))
+      .register<WebResourceManager<SearchTv>>(()=> WebResourceManager<SearchTv>(SearchTvService()))
       //.register<LoginGoogleManager>(()=> LoginGoogleManager())
 
       ,

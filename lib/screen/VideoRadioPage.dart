@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nanews/Widget/ScaffoldWrapper.dart';
 import 'package:nanews/screen/SearchScreen.dart';
+import 'package:nanews/screen/SearchScreenTv.dart';
 
 import 'package:nanews/screen/VideoRadioScreen/VideoBuzzScreen.dart';
 import 'package:nanews/screen/VideoRadioScreen/list_radio.dart';
@@ -18,7 +19,7 @@ class VideoRadio extends StatelessWidget {
         Tab(text: "Radio",),
         Tab(text: "Video Buzz",),
       ],
-      search: ()=> showSearch(context: context,delegate: ScreenSearchDelegate()),
+      search: ()=> showSearch(context: context,delegate: ScreenSearchDelegateTv()),
       body: TabBarView(children: [
         Tv(),
         RadioList(),

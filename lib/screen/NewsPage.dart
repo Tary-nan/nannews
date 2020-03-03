@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nanews/Const/utilitaire.dart';
 import 'package:nanews/FeatureArticle/ArticleCategoryService.dart';
 import 'package:nanews/Widget/ScaffoldWrapper.dart';
 import 'package:nanews/screen/NewsScreen/PolitiqueScreen.dart';
@@ -9,7 +10,6 @@ import 'package:nanews/screen/SearchScreen.dart';
 
 
 class News extends StatelessWidget {
-
 
   @override
   Widget build(BuildContext context) {
@@ -36,6 +36,18 @@ class News extends StatelessWidget {
           ),
         );
       }
+      ,
+      onWaiting: (context)=>  ScaffoldWrapper(
+      length: Const.CATEGORIES.length ,
+      mesTabs: Const.CATEGORIES.map((x)=> Tab(
+        text: x,
+      ),).toList(),
+      //search: ()=> showSearch(context: context,delegate: ScreenSearchDelegate()),
+      body: TabBarView(
+          children: Const.CATEGORIES.map((x)=> Container()).toList()
+      ),
+    ),
     );
   }
 }
+

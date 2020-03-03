@@ -3,7 +3,6 @@ import 'package:flutter_playout/multiaudio/MultiAudioSupport.dart';
 import 'package:flutter_playout/player_observer.dart';
 import 'package:flutter_playout/video.dart';
 import 'package:nanews/FeatureTv/TvCategoryModel.dart';
-import 'package:nanews/screen/LectureTvScreen.dart';
 import 'package:sprinkle/Observer.dart';
 import 'package:sprinkle/WebResourceManager.dart';
 import 'package:sprinkle/SprinkleExtension.dart';
